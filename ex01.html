@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="ex02.js"></script>
+
+</head>
+<body>
+<span id="result"></span>
+<script>
+    function solveSimpleEquation(a,b){
+let check = document.getElementById('result')
+if (a == 0 && b == 0){
+check.innerHTML = "Vô số nghiệm";
+}
+else if (a == 0){
+check.innerHTML = "Vô nghiệm";
+}
+else {
+let result = "Phương trình có nghiệm: " + -b / a;
+check.innerHTML = result;
+}
+}
+
+solveSimpleEquation(5,8);
+</script>
+</body>
+</html>

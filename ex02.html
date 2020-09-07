@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [2,4,5,7,14,8,34];
+    let number = +prompt("Nhap so can tim");
+
+    function findNumber(num,arr){
+        for (let i = 0; i < arr.length-1; i++) {
+            if (num == arr[i]){
+                document.write("Số nằm ở vị trí: " + i)
+            }
+        }
+    }
+
+findNumber(number,array);
+</script>
+</body>
+</html>

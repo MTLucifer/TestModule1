@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script src="Animals.js"></script>
+<script>
+    let objAnimal1 = new Animal("Elephant", 45.6);
+    document.write(objAnimal1.toString());
+
+    let name2 = "random Name"
+    let weight2 = "random Weight";
+    let objAnimal2 = new Animal(name2,weight2);
+
+    objAnimal2.setName("Mouse");
+    objAnimal2.setWeight(0.5)
+    document.write("<br>" +"Tên mới : "+  objAnimal2.getName() + "<br>" + "Cân nặng mới: " + objAnimal2.getWeight());
+</script>
+</body>
+</html>

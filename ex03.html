@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="result"></span>
+<script>
+    let array = prompt("Nhap chuoi")
+    let count = 0;
+    function checkVowels(arr){
+        let arrVowels = ["u","e","o","a","i","U","E","O","A","I"];
+
+        for (let i = 0; i < arr.length ; i++) {
+            for (let j = 0; j < arrVowels.length ; j++) {
+                if (arr[i] == arrVowels[j]){
+                    count ++;
+                }
+            }
+        }
+        return count;
+    }
+    checkVowels(array)
+    document.getElementById('result').innerHTML = "Số nguyên âm trong chuỗi là: " + count;
+</script>
+</body>
+</html>
